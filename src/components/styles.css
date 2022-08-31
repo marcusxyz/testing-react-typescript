@@ -42,6 +42,13 @@
   transform: scale(0.95);
 }
 
+.todo-list {
+  display: flex;
+  justify-content: space-evenly;
+  width: 90%;
+  flex-wrap: wrap;
+}
+
 @media (min-width: 960px) {
   .input {
     width: 33%;
