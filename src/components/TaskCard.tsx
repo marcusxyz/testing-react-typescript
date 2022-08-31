@@ -20,6 +20,10 @@ const TaskCard: React.FC<TaskProps> = ({ todo, lists, setLists }) => {
     );
   };
 
+  const handleDelete = (id: number) => {
+    setLists(lists.filter((todo) => todo.id !== id));
+  };
+
   return (
     <form className='task__single'>
       {/* // If todo is done(?) show striked text. Else (:) Show text */}
@@ -35,7 +39,7 @@ const TaskCard: React.FC<TaskProps> = ({ todo, lists, setLists }) => {
         <span className='icon' onClick={() => handleDone(todo.id)}>
           <MdCheck />
         </span>
-        <span className='icon'>
+        <span className='icon' onClick={() => handleDelete(todo.id)}>
           <MdDelete />
         </span>
       </div>
