@@ -7,7 +7,7 @@
 
 .input__box {
   width: 100%;
-  border-radius: 3rem;
+  border-radius: 0.25rem;
   padding: 1.25rem 1.5rem;
   font-size: 1rem;
   border: none;
@@ -23,19 +23,18 @@
 .input__submit {
   position: absolute;
   right: 0;
-  padding: 1rem 1.25rem;
-  margin: 0.25rem;
-  border-radius: 3rem;
+  padding: 1.25rem;
+  border-radius: 0 0.25rem 0.25rem 0;
   border: none;
   font-size: 1rem;
-  background-color: seagreen;
+  background-color: slateblue;
   color: white;
   transition: 0.2s all;
   cursor: pointer;
 }
 
 .input__submit:hover {
-  background-color: green;
+  background-color: darkslateblue;
 }
 
 .input__submit:active {
@@ -49,8 +48,41 @@
   flex-wrap: wrap;
 }
 
+.task__single {
+  display: flex;
+  width: 100%;
+  border-radius: 0.25rem;
+  padding: 1.25rem;
+  margin-top: 1.5rem;
+  background-color: black;
+  color: white;
+}
+
+.task__single--description {
+  text-align: left;
+  flex: 1;
+  padding: 0.25rem;
+  border: none;
+  font-size: 1.25rem;
+}
+
+.task__single--description:focus {
+  outline: none;
+}
+
+.icon {
+  margin-left: 0.5rem;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
 @media (min-width: 960px) {
   .input {
     width: 33%;
+  }
+
+  .task__single {
+    width: 30%;
+    background-color: black;
   }
 }

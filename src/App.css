@@ -3,24 +3,20 @@
 }
 
 .App-header {
-  background-color: violet;
+  background-color: silver;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
+  color: black;
 }
 
 /* Desktop */
 
-@media (min-width: 960px) {
+/* @media (min-width: 960px) {
   .App-header {
     background-color: slateblue;
   }
-}
+} */
